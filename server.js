@@ -1,33 +1,26 @@
 //Dependencies
-
-const fs = require("fs");
-const path = require("path")
 const express = require("express");
-
 const app = express();
 
 //Sets an initial port
-const PORT = process.env.PORT || 8989;
+const PORT = process.env.PORT || 8080;
 
 //Sets up initial app to handle data parsing
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+
 //Link to css 
-app.use(express.static(path.join(_dirname, "public")));
+app.use(express.static("public"));
 
-//Route = Map
+//Route
 
-//Displays homepage
-app.get("/", (res, req)=>{
-  res.sendFile(path.join(_dirname, "public", "index.html"));
-});
-app.get("/notes", (res, req)=>{
-    res.sendFile(path.join(_dirname, "public", "notes.html"));
-    console.log("Note taker page")
-
-});
+require("./Routes/htmlRoutes")(app);
+require("./Routes/apiRoutes")(app);
 
 
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
 
