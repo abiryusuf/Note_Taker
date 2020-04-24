@@ -6,6 +6,9 @@ The application that can be used to write, save, and delete notes. This applicat
 
 ![Screen Shot 2020-04-23 at 9 31 10 PM](https://user-images.githubusercontent.com/41492852/80166472-0ef49300-85ac-11ea-8380-c8788cc33997.png)
 
+![Screen Shot 2020-04-23 at 9 30 48 PM](https://user-images.githubusercontent.com/41492852/80166520-2895da80-85ac-11ea-831f-6a9b21b491ec.png)
+
+
 
 
 
