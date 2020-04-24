@@ -4,6 +4,10 @@
 
 The application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
+![Screen Shot 2020-04-23 at 9 31 10 PM](https://user-images.githubusercontent.com/41492852/80166472-0ef49300-85ac-11ea-8380-c8788cc33997.png)
+
+
+
 
 
 ## Table of Contents
